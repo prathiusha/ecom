@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="heading">
+        <h4>Welcome back! Your cart awaits</h4>
+    </div>
+    <div class="form shadow-lg" id="login-panel">
+        
+            <form action="" method="">
+                <div class="form-group">
+                    <label for="Name">Username</label>
+    
+                    <input type="text" class="form-control shadow" placeholder="Name" name="Name" required="true" [(ngModel)]="Name">
+                    
+                </div>
+                <div class="form-group">
+                    <label for="Name">Password</label>
+                    <input type="password" class="form-control shadow" placeholder="Password" name="Password" required="true" [(ngModel)]="Password">
+                    
+                </div>
+                <div class="error">{{errorMsg}}</div>
+                <button type="submit" name="submit" (click)="login()" class="btn btn-primary loginButton">Login</button><br><br>
+                
+            </form><br />
+        
+    </div>
+    </div>
+        

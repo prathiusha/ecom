@@ -1,0 +1,15 @@
+<div class="product-container">
+    <div class="row">
+<div class=" col-sm-4 card shadow-lg" *ngFor="let product of products" >
+    <img class="card-img-top img-fluid" src="{{product.thumbnail}}" alt="">
+    <div class="card-body">
+        <h3>{{product.title}}</h3>
+        <p>{{product.description}}</p>
+        <p style="font-weight: bold;">${{product.price}} </p>
+        <button class="btn btn-dark addToCart" (click)="addToCart(product) ; cartItems(); ">Add to Cart</button>
+    </div>
+</div>
+</div>
+</div>
+<!--<p>{{products | json}}</p>
+<span style="font-weight: 300; color: rgb(223, 60, 60);" >{{product.discountPercentage}}</span> -->
